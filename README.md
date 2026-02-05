@@ -1,60 +1,51 @@
-# FoodExpress - Order Management System
+# Food Delivery App
 
-A premium food delivery order management feature built with Next.js 15, TypeScript, and TDD.
+A comprehensive food delivery application built with Next.js.
 
-## 🚀 Features
+## Deployment
 
-- **Menu Display**: Vibrant list of food items with categories, descriptions, and pricing.
-- **Cart Management**: Add/remove items and adjust quantities.
-- **Checkout Flow**: Secure-feeling checkout with form validation (Zod).
-- **Real-time Order Tracking**: Dynamic status updates (simulated on the backend).
-- **Premium UI**: Dark mode aesthetic with glassmorphism, gradients, and micro-animations.
-- **TDD Approach**: Comprehensive test suite covering API, Database, and UI components.
+🚀 **Live Demo:** [https://order-management-ivory.vercel.app/](https://order-management-ivory.vercel.app/)
 
-## 🛠️ Technology Stack
+## Getting Started
 
-- **Framework**: Next.js 15 (App Router)
-- **Styling**: Vanilla CSS (CSS Modules)
-- **Validation**: Zod
-- **Testing**: Jest & React Testing Library
-- **State Management**: React Context API
-- **Icons/Fonts**: Google Fonts (Inter)
+### Prerequisites
 
-## 🧪 Testing (TDD)
+- Node.js
+- npm
 
-The project follows Test-Driven Development principles. The test suite includes:
+### Installation
 
-- **Unit Tests**: Database logic and Zod schemas (`__tests__/db_validation.test.ts`).
-- **Integration Tests**: API route handlers (`__tests__/api.test.ts`).
-- **Component Tests**: Key UI components like `MenuItemCard` and `OrderTracker` (`__tests__/*.test.tsx`).
+1. Clone the repository:
 
-To run the tests:
+   ```bash
+   git clone <repository-url>
+   ```
 
-```bash
-npm test
-```
+2. Install dependencies:
 
-## 🏗️ Architecture & Design Choices
-
-1. **In-Memory Store**: Uses an in-memory database (`lib/db.ts`) for simplicity as per requirements, while maintaining a clean API boundary for future DB integration.
-2. **Context API**: Cart state is managed via a dedicated `CartContext`, ensuring efficient updates across the application without prop drilling.
-3. **Backend Simulation**: Order progression is simulated in the `db.ts` file based on timestamps, providing a realistic "Preparing" -> "Out for Delivery" flow without needing complex web sockets for this demo.
-4. **CSS Modules**: Used for scoped, maintainable styling while keeping the premium "hand-crafted" look of Vanilla CSS.
-
-## 🏁 Getting Started
-
-1. Install dependencies:
    ```bash
    npm install
    ```
-2. Run the development server:
+
+3. Run the development server:
+
    ```bash
    npm run dev
    ```
-3. Open [http://localhost:3000](http://localhost:3000)
 
-## 📦 Deliverables Note
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **API**: Found in `app/api/`
-- **UI**: Components in `components/`, pages in `app/`
-- **Tests**: Located in `__tests__/`
+## Features
+
+- **Menu Display:** Browse a variety of food items.
+- **Cart Management:** Add items to cart and review them.
+- **Order Placement:** Seamless checkout process.
+- **Order Tracking:** Track the status of your orders.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **Styling:** CSS Modules / Vanilla CSS
+- **Testing:** Jest & React Testing Library
+- **Deployment:** Vercel
