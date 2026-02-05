@@ -1,0 +1,41 @@
+
+> food-delivery-app@0.1.0 lint
+> eslint
+
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\__tests__\MenuItemCard.test.tsx
+  4:10  warning  'CartProvider' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\__tests__\db_validation.test.ts
+   2:29   warning  'updateOrderStatusSchema' is defined but never used  @typescript-eslint/no-unused-vars
+  18:18   error    Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  43:18   error    Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  93:150  error    Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+  94:150  error    Unexpected any. Specify a different type             @typescript-eslint/no-explicit-any
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\app\api\menu\route.ts
+  11:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\app\api\orders\[id]\route.ts
+  28:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  79:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\app\api\orders\route.ts
+  15:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  72:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\app\cart\page.tsx
+  28:35  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\app\orders\page.tsx
+  23:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\components\CheckoutForm.tsx
+  66:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\LENOVO\Desktop\my apps\food-delivery-app\components\OrderTracker.tsx
+  33:14  warning  'err' is defined but never used                                                                                @typescript-eslint/no-unused-vars
+  47:6   warning  React Hook useEffect has a missing dependency: 'fetchOrder'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+Γ£û 16 problems (5 errors, 11 warnings)
+

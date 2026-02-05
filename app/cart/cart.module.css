@@ -1,0 +1,60 @@
+.headerSection {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.emptyCard {
+  padding: 6rem 2rem;
+}
+
+.emptyIcon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.emptyTitle {
+  margin-bottom: 1rem;
+}
+
+.emptySubtitle {
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.stickySide {
+  position: sticky;
+  top: 100px;
+}
+
+.footer {
+  padding: 4rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .stickySide {
+    position: static;
+  }
+}

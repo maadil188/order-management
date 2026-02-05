@@ -1,0 +1,171 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.orderCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-purple);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.id {
+  font-weight: 700;
+  color: var(--accent-purple);
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.statusBadge.orderreceived {
+  color: var(--accent-blue);
+  background: rgba(79, 172, 254, 0.1);
+}
+.statusBadge.preparing {
+  color: var(--accent-orange);
+  background: rgba(255, 107, 107, 0.1);
+}
+.statusBadge.outfordelivery {
+  color: var(--accent-pink);
+  background: rgba(240, 147, 251, 0.1);
+}
+.statusBadge.delivered {
+  color: var(--accent-green);
+  background: rgba(81, 207, 102, 0.1);
+}
+
+.cardBody p {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.itemPreviews {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.25rem 0;
+}
+
+.thumbnailWrapper {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.qtyBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--accent-purple);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 10px;
+  border: 2px solid var(--bg-card);
+}
+
+.moreItems {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  border: 1px dashed var(--border-color);
+}
+
+.date {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.cardFooter {
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
+
+.trackLink {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.trackLink:hover {
+  color: var(--accent-purple);
+}
+
+.headerSection {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.emptyCard {
+  padding: 6rem 2rem;
+}
+
+.emptyTitle {
+  margin-bottom: 1rem;
+}
+
+.emptySubtitle {
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.footer {
+  padding: 4rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  opacity: 0.5;
+}
