@@ -22,6 +22,7 @@
   gap: 0.75rem;
   text-decoration: none;
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .logo:hover {
@@ -42,6 +43,12 @@
   background-clip: text;
 }
 
+.navWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -55,6 +62,7 @@
   font-size: 1rem;
   position: relative;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
 .navLink::after {
@@ -122,16 +130,101 @@
   }
 }
 
-@media (max-width: 768px) {
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  z-index: 101;
+  position: relative;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Tablet and Mobile */
+@media (max-width: 992px) {
+  .hamburger {
+    display: block;
+  }
+
   .nav {
-    gap: 1rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: rgba(15, 15, 30, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3rem;
+    padding-right: 3rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .navActive {
+    right: 0;
   }
 
   .navLink {
-    font-size: 0.875rem;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+
+  .navLink::after {
+    left: auto;
+    right: 0;
   }
 
   .logoText {
     font-size: 1.25rem;
+  }
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 480px) {
+  .nav {
+    width: 85%;
+    max-width: 280px;
+    padding-right: 2rem;
+  }
+
+  .navLink {
+    font-size: 1.25rem;
+  }
+
+  .logoText {
+    font-size: 1.1rem;
+  }
+
+  .logoIcon {
+    font-size: 1.75rem;
   }
 }

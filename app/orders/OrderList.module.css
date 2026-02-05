@@ -169,3 +169,120 @@
   text-align: center;
   opacity: 0.5;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .headerSection {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .orderCard {
+    padding: 1.25rem;
+  }
+
+  .cardHeader {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .id {
+    font-size: 0.95rem;
+  }
+
+  .statusBadge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .itemPreviews {
+    margin: 1rem 0;
+  }
+
+  .thumbnailWrapper {
+    width: 45px;
+    height: 45px;
+  }
+
+  .moreItems {
+    width: 45px;
+    height: 45px;
+    font-size: 0.75rem;
+  }
+
+  .cardFooter {
+    padding-top: 1rem;
+  }
+
+  .trackLink {
+    font-size: 0.85rem;
+  }
+
+  .emptyCard {
+    padding: 3rem 1.5rem;
+  }
+
+  .footer {
+    padding: 2rem 0;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .orderCard {
+    padding: 1rem;
+  }
+
+  .id {
+    font-size: 0.85rem;
+  }
+
+  .cardBody p {
+    font-size: 0.9rem;
+  }
+
+  .thumbnailWrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .moreItems {
+    width: 40px;
+    height: 40px;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+
+  .emptyCard {
+    padding: 2rem 1rem;
+  }
+}

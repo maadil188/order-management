@@ -51,7 +51,36 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0; /* Reduced padding for mobile */
+  }
+
   .heroTitle {
     font-size: 2.5rem;
+  }
+
+  .menuGrid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .categoryFilters {
+    gap: 0.75rem;
+  }
+
+  .categoryBtn {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .menuGrid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }

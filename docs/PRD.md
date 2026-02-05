@@ -45,6 +45,8 @@
 
 - **Premium Aesthetic**: Modern dark theme with glassmorphism and smooth gradients.
 - **Responsiveness**: Fully functional across mobile, tablet, and desktop devices.
+- **Professional Mobile UI**: Use of a dedicated hamburger menu drawer on small screens, allowing all navigation (Menu, Orders, Cart) to be accessible without crowding the header.
+- **Centered Mobile Content**: Critical page headers and subtitles are centered on mobile views to enhance readability and aesthetics.
 - **Interactivity**: Micro-animations and hover effects to improve user engagement.
 
 ### 5.2 Performance & Reliability

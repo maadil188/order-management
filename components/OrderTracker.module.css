@@ -191,8 +191,50 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .orderIdTitle {
+    font-size: 1.5rem;
+  }
+
+  .orderDate {
+    font-size: 0.9rem;
+  }
+
+  .totalBadge {
+    padding: 0.6rem 1.25rem;
+    font-size: 1.1rem;
+    align-self: flex-start;
+  }
+
+  .statusSection {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
   .detailsGrid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .detailCard {
+    padding: 1.5rem;
+  }
+
+  .detailCard h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
   }
 
   .progressBar {
@@ -204,7 +246,84 @@
     min-width: 50%;
   }
 
+  .stepCircle {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .stepCircle.active {
+    transform: scale(1.15);
+  }
+
+  .stepLabel {
+    font-size: 0.75rem;
+  }
+
   .stepLine {
     display: none;
+  }
+
+  .itemRow {
+    font-size: 0.9rem;
+  }
+
+  .itemImage {
+    width: 35px;
+    height: 35px;
+  }
+
+  .addressName {
+    font-size: 1rem;
+  }
+
+  .addressText {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.25rem;
+  }
+
+  .orderIdTitle {
+    font-size: 1.25rem;
+  }
+
+  .totalBadge {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .statusSection {
+    padding: 1.25rem;
+  }
+
+  .detailCard {
+    padding: 1.25rem;
+  }
+
+  .detailCard h4 {
+    font-size: 1rem;
+  }
+
+  .stepCircle {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+
+  .stepLabel {
+    font-size: 0.7rem;
+  }
+
+  .itemRow {
+    font-size: 0.85rem;
+  }
+
+  .itemImage {
+    width: 30px;
+    height: 30px;
   }
 }

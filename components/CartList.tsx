@@ -50,10 +50,10 @@ export default function CartList() {
               >
                 +
               </button>
-            </div>
-
-            <div className={styles.itemTotal}>
-              ${(item.menuItem.price * item.quantity).toFixed(2)}
+              
+              <div className={styles.itemTotal}>
+                ${(item.menuItem.price * item.quantity).toFixed(2)}
+              </div>
             </div>
 
             <button

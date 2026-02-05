@@ -58,3 +58,42 @@
     position: static;
   }
 }
+
+@media (max-width: 768px) {
+  .headerSection {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .emptyCard {
+    padding: 3rem 1.5rem;
+  }
+
+  .emptyIcon {
+    font-size: 3rem;
+  }
+
+  .footer {
+    padding: 2rem 0;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .emptyCard {
+    padding: 2rem 1rem;
+  }
+}

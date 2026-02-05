@@ -82,17 +82,21 @@ Managed via `CartContext` (`contexts/CartContext.tsx`). Actions include:
 - `updateQuantity(id, qty)`
 - `clearCart()`
 
-## 5. Component Breakdown
+### 4.3 Mobile UI Patterns
 
-| Component      | Responsibility                                                           | Type   |
-| :------------- | :----------------------------------------------------------------------- | :----- |
-| `Home (page)`  | Server Component. Fetches menu data directly for fast LCP.               | Server |
-| `MenuGrid`     | Client Component. Handles category filtering and responsive grid layout. | Client |
-| `Header`       | Navigation and Cart badge display (real-time count).                     | Client |
-| `MenuItemCard` | Display individual item. Optimized with `next/image` and CLS prevention. | Client |
-| `CartList`     | Line-item view of the cart with quantity controls.                       | Client |
-| `CheckoutForm` | Multi-field form with Zod validation and submission logic.               | Client |
-| `OrderTracker` | Visual progress bar. Polls API for status updates.                       | Client |
+- **Hamburger Drawer**: On screens ≤ 992px, the `Header` switches to a hamburger toggle. Clicking it slides in a right-aligned sidebar containing all navigation items.
+- **Centered Typography**: Pages like Cart, Orders, and Order Tracking use `text-align: center` for titles and subtitles on mobile screens (≤ 768px) to maintain visual balance.
+- **Stacked Lists**: Cart items and Order cards switch from multi-column grids to optimized vertical stacks on mobile to ensure accessibility.
+
+| Component      | Responsibility                                                                                                 | Type   |
+| :------------- | :------------------------------------------------------------------------------------------------------------- | :----- |
+| `Home (page)`  | Server Component. Fetches menu data directly for fast LCP.                                                     | Server |
+| `MenuGrid`     | Client Component. Handles category filtering and responsive grid layout.                                       | Client |
+| `Header`       | Navigation and Cart badge display. On mobile, implements a professional hamburger drawer containing all links. | Client |
+| `MenuItemCard` | Display individual item. Optimized with `next/image` and CLS prevention.                                       | Client |
+| `CartList`     | Line-item view of the cart with quantity controls.                                                             | Client |
+| `CheckoutForm` | Multi-field form with Zod validation and submission logic.                                                     | Client |
+| `OrderTracker` | Visual progress bar. Polls API for status updates.                                                             | Client |
 
 ## 6. Testing Strategy
 
